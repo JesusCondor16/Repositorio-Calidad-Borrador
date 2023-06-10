@@ -1,0 +1,315 @@
+<link rel="stylesheet" href="../pagina-principal/pagina-principal.component.css">
+<header>
+    <section class="cabecera_superior">
+        <h1>Alfashop</h1>
+        <img src="../Imagenes/logo.png" alt="Logo">
+    </section>
+    <section class="cabecera_inferior">
+        <div class="barra_busqueda">
+            <input type="text" id="producto" placeholder="Buscar producto" [(ngModel)]="productoBuscado">
+            <button class="btnBuscar" (click)="buscarProducto()">Buscar</button>
+        </div>
+        <button class="btnUsuario">Usuario</button>
+    </section>
+</header>
+
+<main>
+
+<!-- Categoria abarrotes -->
+
+    <div class="categoria">
+        <h2>Abarrotes</h2>
+        <div class="productos_grupo">
+            <a routerLink="pagina-producto1" class="producto" (click)="verDetalleProducto('fideo-molitalia-1kg')">
+                <img src="../Imagenes/Abarrotes/Molitalia-tallarin.jpg" alt="fideo-molitalia-1kg">
+                <div class="descripcion">
+                    <h3>Fideo Molitalia 1Kg</h3>
+                    <div class="precio">$10.99</div>
+                </div>
+            </a>
+            
+
+            <a routerLink="pagina-producto1" class="producto" (click)="verDetalleProducto('Fideo-Tallarin-Nicolini-Paquete-1-kg')">
+                <img src="../Imagenes/Abarrotes/Fideo-Tallarin-Nicolini-Paquete-1-kg.jpg" alt="Fideo-Tallarin-Nicolini-Paquete-1-kg">
+                <div class="descripcion">
+                    <h3>Fideo Nicolini 1Kg</h3>
+                    <div class="precio">$5.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto1" class="producto" (click)="verDetalleProducto('azucar-rubia-dulfina-2kg')">
+                <img src="../Imagenes/Abarrotes/azucar-rubia-dulfina.jpg" alt="azucar-rubia-dulfina-2kg">
+                <div class="descripcion">
+                    <h3>Azucar Dulfina 2Kg</h3>
+                    <div class="precio">$4.85</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto1" class="producto" (click)="verDetalleProducto('azucar-costeño-2kg')">
+                <img src="../Imagenes/Abarrotes/azucar-costeño-2kg.jpg" alt="azucar-costeño-2kg">
+                <div class="descripcion">
+                    <h3>Azucar Costeño 2Kg</h3>
+                    <div class="precio">$4.88</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto1" class="producto" (click)="verDetalleProducto('atun-primor-140gr')">
+                <img src="../Imagenes/Abarrotes/atun-primor.jpg" alt="atun-primor-140gr">
+                <div class="descripcion">
+                    <h3>Atun Primor 140gr</h3>
+                    <div class="precio">$2.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto1" class="producto" (click)="verDetalleProducto('atun-fanny-170gr')">
+                <img src="../Imagenes/Abarrotes/atun-fanny.jpg" alt="atun-fanny-170gr">
+                <div class="descripcion">
+                    <h3>Atun Fanny 170gr</h3>
+                    <div class="precio">$2.99</div>
+                </div>
+            </a>
+          
+        </div>
+    </div>
+
+
+<!-- Categoria bebidas -->
+    <div class="categoria">
+        <h2>Bebidas</h2>
+        <div class="productos_grupo">
+            <a routerLink="pagina-producto2" class="producto" (click)="verDetalleProducto('Coca-Cola-3Litros')">
+                <img src="../Imagenes/Bebidas/Coca-Cola-3Litros.jpg" alt="Coca-Cola-3Litros">
+                <div class="descripcion">
+                    <h3>Coca Cola 3L</h3>
+                    <div class="precio">$8.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto2" class="producto" (click)="verDetalleProducto('inka-cola-3Lt')">
+                <img src="../Imagenes/Bebidas/inka-cola-3Lt.jpg" alt="inka-cola-3Lt">
+                <div class="descripcion">
+                    <h3>Inka Cola 3L</h3>
+                    <div class="precio">$12.99</div>
+                </div>
+            </a>
+
+
+            <a routerLink="pagina-producto2" class="producto" (click)="verDetalleProducto('san-luis-3litros')">
+                <img src="../Imagenes/Bebidas/san-luis-3litros.png" alt="san-luis-3litros">
+                <div class="descripcion">
+                    <h3>Agua San Luis 3L</h3>
+                    <div class="precio">$5.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto2" class="producto" (click)="verDetalleProducto('agua-cielo-2.5L')">
+                <img src="../Imagenes/Bebidas/agua-cielo-2.5L.jpg" alt="agua-cielo-2.5L">
+                <div class="descripcion">
+                    <h3>Agua Cielo 2.5L</h3>
+                    <div class="precio">$5.99</div>
+                </div>
+            </a>
+
+            
+
+            <a routerLink="pagina-producto2" class="producto" (click)="verDetalleProducto('aquarius-500ml')">
+                <img src="../Imagenes/Bebidas/aquarius-500ml.jpg" alt="aquarius-500ml">
+                <div class="descripcion">
+                    <h3>Aquarius 500ml</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto2" class="producto" (click)="verDetalleProducto('fanta-500ml')">
+                <img src="../Imagenes/Bebidas/fanta-500ml.jpg" alt="fanta-500ml">
+                <div class="descripcion">
+                    <h3>Fanta 500ml</h3>
+                    <div class="precio">$8.99</div>
+                </div>
+            </a>
+        </div>
+
+        
+    </div>
+
+    <!-- Categoria lacteos -->
+    <div class="categoria">
+        <h2>Lacteos</h2>
+        <div class="productos_grupo">
+            <a routerLink="pagina-producto3" class="producto" (click)="verDetalleProducto('leche-gloria-azul')">
+                <img src="../Imagenes/Lacteos/leche-gloria-azul.jpg" alt="leche-gloria-azul 400gr">
+                <div class="descripcion">
+                    <h3>Leche Gloria azul 400g</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto3" class="producto" (click)="verDetalleProducto('Leche-gloria-celeste-170gr')">
+                <img src="../Imagenes/Lacteos/Leche-gloria-celeste-170gr.png" alt="Leche-gloria-celeste-170gr">
+                <div class="descripcion">
+                    <h3>Leche Gloria celeste 170gr</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto3" class="producto" (click)="verDetalleProducto('leche-laive-400gr')">
+                <img src="../Imagenes/Lacteos/leche-laive-400gr.jpg" alt="leche-laive-400gr">
+                <div class="descripcion">
+                    <h3>Leche Laive 400g</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto3" class="producto" (click)="verDetalleProducto('leche-laive-entera-900ml')">
+                <img src="../Imagenes/Lacteos/leche-laive-entera-900ml.png" alt="leche-laive-entera-900ml ">
+                <div class="descripcion">
+                    <h3>Leche Laive Entera 400g</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto3" class="producto" (click)="verDetalleProducto('leche-ideal-400gr')">
+                <img src="../Imagenes/Lacteos/leche-ideal-400gr.jpg" alt="leche-ideal 400gr">
+                <div class="descripcion">
+                    <h3>Leche Ideal 400gr</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto3" class="producto" (click)="verDetalleProducto('leche-bonle-395gr')">
+                <img src="../Imagenes/Lacteos/leche-bonle-395gr.jpg" alt="leche-bonle-395gr">
+                <div class="descripcion">
+                    <h3>Leche Bonle 395 gr</h3>
+                    <div class="precio">$8.99</div>
+                </div>
+            </a>
+            
+        </div>
+
+        
+    </div>
+
+<!-- Categoria frutas -->
+    <div class="categoria">
+        <h2>Frutas</h2>
+        <div class="productos_grupo">
+            <a routerLink="pagina-producto4" class="producto" (click)="verDetalleProducto('manzana-roja-chilena-1kg')">
+                <img src="../Imagenes/Frutas/manzana-roja-chilena.png" alt="manzana-roja-chilena-1kg">
+                <div class="descripcion">
+                    <h3>Manzana roja chilena 1Kg</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto4" class="producto" (click)="verDetalleProducto('fresas-1kg')">
+                <img src="../Imagenes/Frutas/fresas-1kg.jpg" alt="fresas-1kg">
+                <div class="descripcion">
+                    <h3>Fresas 1Kg</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto4" class="producto" (click)="verDetalleProducto('granadilla-1kg')">
+                <img src="../Imagenes/Frutas/granadilla-1kg.jpg" alt="granadilla-1kg">
+                <div class="descripcion">
+                    <h3>Granadilla 1Kg</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto4" class="producto" (click)="verDetalleProducto('mango-1kg')">
+                <img src="../Imagenes/Frutas/mango-1kg.jpg" alt="mango-1kg">
+                <div class="descripcion">
+                    <h3>Mango 1Kg</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto4" class="producto" (click)="verDetalleProducto('peras-1kg')">
+                <img src="../Imagenes/Frutas/peras-1kg.jpg" alt="peras-1kg">
+                <div class="descripcion">
+                    <h3>Peras 1Kg</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto4" class="producto" (click)="verDetalleProducto('uva-1kg')">
+                <img src="../Imagenes/Frutas/uva-1kg.jpg" alt="uva-1kg">
+                <div class="descripcion">
+                    <h3>Uva 1Kg</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+        </div>
+
+        
+    </div>
+
+<!-- Categoria articulos de limpieza -->
+    <div class="categoria">
+        <h2>Articulos de limpieza</h2>
+        <div class="productos_grupo">
+            <a routerLink="pagina-producto5" class="producto" (click)="verDetalleProducto('Lejia Clorox 680ml')">
+                <img src="../Imagenes/Articulos.Limpieza/lejia-clorox.jpg" alt="Lejia-clorox 680ml">
+                <div class="descripcion">
+                    <h3>Lejia Clorox 680ml</h3>
+                    <div class="precio">$4.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto5" class="producto" (click)="verDetalleProducto('lejia-sapolio-5L')">
+                <img src="../Imagenes/Articulos.Limpieza/lejia-sapolio-5L.jpg" alt="lejia-sapolio-5L">
+                <div class="descripcion">
+                    <h3>Lejia Sapolio 5L</h3>
+                    <div class="precio">$5.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto5" class="producto" (click)="verDetalleProducto('detergente-bolivar-2.4kg')">
+                <img src="../Imagenes/Articulos.Limpieza/detergente-bolivar-2.4kg.jpg" alt="detergente-bolivar-2.4kg">
+                <div class="descripcion">
+                    <h3>Detergente Bolivar 2.4kg</h3>
+                    <div class="precio">$6.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto5" class="producto" (click)="verDetalleProducto('detergente-liquido-ariel-3L')">
+                <img src="../Imagenes/Articulos.Limpieza/detergente-liquido-ariel-3L.jpg" alt="detergente-liquido-ariel-3L">
+                <div class="descripcion">
+                    <h3>Detergente Liquido Ariel 3L</h3>
+                    <div class="precio">$7.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto5" class="producto" (click)="verDetalleProducto('aromatizante-glade-275ml')">
+                <img src="../Imagenes/Articulos.Limpieza/aromatizante-glade-275ml.jpg" alt="aromatizante-glade-275ml">
+                <div class="descripcion">
+                    <h3>Aromatizante Glade 275ml</h3>
+                    <div class="precio">$8.99</div>
+                </div>
+            </a>
+
+            <a routerLink="pagina-producto5" class="producto" (click)="verDetalleProducto('ayudin-liquido-500ml')">
+                <img src="../Imagenes/Articulos.Limpieza/ayudin-liquido-500ml.jpg" alt="ayudin-liquido-500ml">
+                <div class="descripcion">
+                    <h3>Ayudin liquido 500ml</h3>
+                    <div class="precio">$9.99</div>
+                </div>
+            </a>
+
+        </div>
+
+        
+    </div>
+
+    <!-- Resto de categorías y productos -->
+</main>
+
+<footer>
+    <div class="informacion">
+        <p>Contacto: alfashop-minimarket@gmail.com</p>
+        <p>Dirección: Calle Principal #123</p>
+    </div>
+    <button class="btnVolverArriba"><i class="fas fa-arrow-up"></i></button>
+</footer>
+<script src="../pagina-principal/pagina-principal.component.ts"></script>
